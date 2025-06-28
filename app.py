@@ -20,8 +20,7 @@ from streamlit_autorefresh import st_autorefresh
 
 # === Configuration ===
 DOWNLOAD_DIR = "/Users/walidmaaninou/Downloads"
-OPENAI_API_KEY = "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"
-openai.api_key = OPENAI_API_KEY
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 # === Streamlit App Setup ===
